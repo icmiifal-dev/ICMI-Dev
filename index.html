@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICMI - Inclusão de Crianças</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    /* Adiciona o scroll suave para toda a página */
+ 
+  </style>  
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+     <img src="./img/Logo-ICMI-PP.png" alt="Logo ICMI">
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#participantes">Participantes</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>ICMI</h1>
+      <p>Inclusão de Crianças à Matemática Interativa</p>
+      <p>O ICMI é uma iniciativa do Instituto Federal de Alagoas – Campus Rio Largo, criada com o propósito de aproximar crianças do universo da matemática de forma lúdica, interativa e inclusiva.</p>
+      <div class="buttons">
+        <a href="#" class="btn">Projetos</a>
+        <a href="#" class="btn secondary">Saiba mais</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="./img/icmi.png" alt="Logo ICMI">
+    </div>
+  </section>
+
+  <!-- Participantes -->
+  <section id="participantes" class="participantes">
+    <h2>Participantes</h2>
+    <div class="carousel-container">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="./img/participante.jpg" alt="Participante">
+          <h3>EDEL ALEXANDRE</h3>
+          <p>Monitor</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/participante.jpg" alt="Participante">
+          <h3>EDEL ALEXANDRE</h3>
+          <p>Monitor</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/participante.jpg" alt="Participante">
+          <h3>EDEL ALEXANDRE</h3>
+          <p>Monitor</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/participante.jpg" alt="Participante">
+          <h3>EDEL ALEXANDRE</h3>
+          <p>Monitor</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/participante.jpg" alt="Participante">
+          <h3>EDEL ALEXANDRE</h3>
+          <p>Monitor</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/participante.jpg" alt="Participante">
+          <h3>EDEL ALEXANDRE</h3>
+          <p>Monitor</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/participante.jpg" alt="Participante">
+          <h3>EDEL ALEXANDRE</h3>
+          <p>Monitor</p>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/participante.jpg" alt="Participante">
+          <h3>EDEL ALEXANDRE</h3>
+          <p>Monitor</p>
+        </div>
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+    </div>
+    
+  </section>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    let index = 0;
+
+    function updateCarousel() {
+      const width = items[0].offsetWidth + 20; // inclui margem/gap
+      track.style.transform = `translateX(${-index * width}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (index < items.length - 1) index++;
+      else index = 0; // loop
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (index > 0) index--;
+      else index = items.length - 1; // loop inverso
+      updateCarousel();
+    });
+
+    window.addEventListener('resize', updateCarousel);
+  </script>
+
+  <!-- Projetos -->
+  <section class="projetos">
+    <h2>Projeto</h2>
+    <div class="cards">
+      <div class="project-card">
+        <img src="tabuada.jpg" alt="Tabuada">
+        <h3>Tabuada Divertida</h3>
+        <p>Aprendizado divertido e inclusivo.</p>
+        <a href="#" class="btn small">Saiba mais</a>
+      </div>
+      <div class="project-card">
+        <img src="tesouro.jpg" alt="Tesouro">
+        <h3>Caça ao Tesouro</h3>
+        <p>Exploração matemática colaborativa.</p>
+        <a href="#" class="btn small">Saiba mais</a>
+      </div>
+      <div class="project-card">
+        <img src="uno.jpg" alt="Uno">
+        <h3>Uno Matemático</h3>
+        <p>Jogo divertido para reforçar operações.</p>
+        <a href="#" class="btn small">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estatísticas -->
+  <section class="stats">
+    <div>
+      <h3>20+</h3>
+      <p>Participantes</p>
+    </div>
+    <div>
+      <h3>8+</h3>
+      <p>Monitores</p>
+    </div>
+    <div>
+      <h3>99%</h3>
+      <p>Aprovação</p>
+    </div>
+    <div>
+      <h3>6+</h3>
+      <p>Projetos</p>
+    </div>
+  </section>
+
+  <!-- Feedback -->
+  <section class="feedback">
+    <h2>Feedbacks</h2>
+    <div class="cards">
+      <div class="feedback-card">
+        <p>"Excelente projeto, ajudou muito meu filho!"</p>
+        <h4>- Maria Virgínia</h4>
+      </div>
+      <div class="feedback-card">
+        <p>"Métodos criativos e inclusivos."</p>
+        <h4>- Maria Virgínia</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ICMI. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

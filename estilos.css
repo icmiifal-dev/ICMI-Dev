@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background: #002147;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f5f7fa;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.hero-text {
+  max-width: 500px;
+}
+.hero-text h1 {
+  font-size: 3rem;
+}
+.hero-text p {
+  margin: 10px 0;
+}
+.buttons .btn {
+  padding: 10px 20px;
+  background: #0056b3;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 5px 0 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn.secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+/* Seções gerais */
+section {
+  padding: 50px 20px;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card, .project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 200px;
+}
+.card img, .project-card img {
+  width: 100%;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: #002147;
+  color: white;
+  padding: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.stats div {
+  margin: 10px;
+}
+.stats h3 {
+  font-size: 2rem;
+}
+
+/* Feedback */
+.feedback {
+  text-align: center;
+}
+.feedback-card {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px auto;
+  max-width: 300px;
+}
+
+/* Footer */
+.footer {
+  background: #002147;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== Carrossel Participantes ===== */
+.carousel-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 0 40px;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+.carousel-item {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 0 10px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+/* Botões */
+.carousel-container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #002147;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  z-index: 5;
+}
+.carousel-container button:hover {
+  opacity: 1;
+}
+.prev { left: 0; }
+.next { right: 0; }
+
+/* ===== Responsividade ===== */
+
+/* Tablets médios */
+@media (max-width: 992px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .cards {
+    gap: 15px;
+  }
+  .card, .project-card {
+    width: 180px;
+  }
+  .carousel-item {
+    width: 200px;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .stats {
+    flex-direction: column;
+  }
+  .carousel-container {
+    padding: 0 20px;
+  }
+  .carousel-container button {
+    top: 90%;
+    transform: translateY(0);
+  }
+  .carousel-item {
+    width: 180px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  .buttons .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .card, .project-card, .feedback-card {
+    width: 90%;
+  }
+  .carousel-container {
+    padding: 0 10px;
+  }
+  .carousel-item {
+    width: 150px;
+    margin: 0 5px;
+    padding: 10px;
+  }
+  .carousel-container button {
+    font-size: 16px;
+    padding: 6px 10px;
+    top: 95%;
+  }
+}
