@@ -86,6 +86,7 @@ body {
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -94,8 +95,19 @@ body {
 }
 
 .btn-secondary {
-  background: #e6e6e6;
-  color: #333;
+    background: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+}
+.btn-tertiary {
+    background: #0066cc;
+  color: #fff;
+    display: inline-block;
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
