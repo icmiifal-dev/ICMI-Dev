@@ -3,187 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ICMI - Inclusão de Crianças</title>
+  <meta name="description" content="ICMI - Inclusão de Crianças à Matemática Interativa">
+  <title>ICMI</title>
   <link rel="stylesheet" href="estilos.css">
-  <style>
-    /* Adiciona o scroll suave para toda a página */
- 
-  </style>  
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- ======= Navbar ======= -->
   <header class="navbar">
-     <img src="./img/Logo-ICMI-PP.png" alt="Logo ICMI">
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#participantes">Participantes</a></li>
-        <li><a href="#">Sobre</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <img src="./img/Logo-ICMI-PP.png" alt="Logotipo ICMI" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#participantes">Participantes</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
+ <section id="inicio" class="hero">
+  <div class="container hero-content">
     <div class="hero-text">
+      <!-- Logo pequena exibida acima do título em mobile -->
+      <img src="./img/icmi.png" alt="Logo ICMI" class="hero-logo">
       <h1>ICMI</h1>
-      <p>Inclusão de Crianças à Matemática Interativa</p>
-      <p>O ICMI é uma iniciativa do Instituto Federal de Alagoas – Campus Rio Largo, criada com o propósito de aproximar crianças do universo da matemática de forma lúdica, interativa e inclusiva.</p>
-      <div class="buttons">
-        <a href="#" class="btn">Projetos</a>
-        <a href="#" class="btn secondary">Saiba mais</a>
+      <p><strong>Inclusão de Crianças à Matemática Interativa</strong></p>
+      <p>
+        O ICMI é uma iniciativa do Instituto Federal de Alagoas – Campus Rio Largo,
+        criada com o propósito de aproximar crianças do universo da matemática de forma
+        lúdica, interativa e inclusiva.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn btn-primary">Projeto</a>
+        <a href="#sobre" class="btn btn-secondary">Saiba mais</a>
       </div>
     </div>
-    <div class="hero-img">
-      <img src="./img/icmi.png" alt="Logo ICMI">
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Participantes -->
-  <section id="participantes" class="participantes">
+<!-- ======= Participantes ======= -->
+<section id="participantes" class="participants">
+  <div class="container">
     <h2>Participantes</h2>
-    <div class="carousel-container">
-      <button class="prev">&#10094;</button>
-      <div class="carousel-track">
-        <div class="carousel-item">
-          <img src="./img/participante.jpg" alt="Participante">
-          <h3>EDEL ALEXANDRE</h3>
-          <p>Monitor</p>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/participante.jpg" alt="Participante">
-          <h3>EDEL ALEXANDRE</h3>
-          <p>Monitor</p>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/participante.jpg" alt="Participante">
-          <h3>EDEL ALEXANDRE</h3>
-          <p>Monitor</p>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/participante.jpg" alt="Participante">
-          <h3>EDEL ALEXANDRE</h3>
-          <p>Monitor</p>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/participante.jpg" alt="Participante">
-          <h3>EDEL ALEXANDRE</h3>
-          <p>Monitor</p>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/participante.jpg" alt="Participante">
-          <h3>EDEL ALEXANDRE</h3>
-          <p>Monitor</p>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/participante.jpg" alt="Participante">
-          <h3>EDEL ALEXANDRE</h3>
-          <p>Monitor</p>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/participante.jpg" alt="Participante">
-          <h3>EDEL ALEXANDRE</h3>
-          <p>Monitor</p>
-        </div>
+    <p>Os participantes do ICMI exploram e compartilham estratégias criativas para tornar a matemática acessível e envolvente para todas as crianças.</p>
+
+    <div class="carousel" id="participants-carousel">
+      <div class="participant-card">
+        <img src="./img/participante.jpg" alt="Foto do participante">
+        <h4>Edel Alexandre</h4>
+        <span class="role">Monitor</span>
       </div>
-      <button class="next">&#10095;</button>
+      <div class="participant-card">
+        <img src="./img/participante.jpg" alt="Foto do participante">
+        <h4>Edel Alexandre</h4>
+        <span class="role">Monitor</span>
+      </div>
+      <div class="participant-card">
+        <img src="./img/participante.jpg" alt="Foto do participante">
+        <h4>Edel Alexandre</h4>
+        <span class="role">Monitor</span>
+      </div>
+      <div class="participant-card">
+        <img src="./img/participante.jpg" alt="Foto do participante">
+        <h4>Edel Alexandre</h4>
+        <span class="role">Monitor</span>
+      </div>
+       <div class="participant-card">
+        <img src="./img/participante.jpg" alt="Foto do participante">
+        <h4>Edel Alexandre</h4>
+        <span class="role">Monitor</span>
+      </div>
+       <div class="participant-card">
+        <img src="./img/participante.jpg" alt="Foto do participante">
+        <h4>Edel Alexandre</h4>
+        <span class="role">Monitor</span>
+      </div>
+       <div class="participant-card">
+        <img src="./img/participante.jpg" alt="Foto do participante">
+        <h4>Edel Alexandre</h4>
+        <span class="role">Monitor</span>
+        
+      </div>
     </div>
-    </div>
-    
-  </section>
+  </div>
+</section>
 
-  <script>
-    const track = document.querySelector('.carousel-track');
-    const items = document.querySelectorAll('.carousel-item');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
 
-    let index = 0;
-
-    function updateCarousel() {
-      const width = items[0].offsetWidth + 20; // inclui margem/gap
-      track.style.transform = `translateX(${-index * width}px)`;
-    }
-
-    nextBtn.addEventListener('click', () => {
-      if (index < items.length - 1) index++;
-      else index = 0; // loop
-      updateCarousel();
-    });
-
-    prevBtn.addEventListener('click', () => {
-      if (index > 0) index--;
-      else index = items.length - 1; // loop inverso
-      updateCarousel();
-    });
-
-    window.addEventListener('resize', updateCarousel);
-  </script>
-
-  <!-- Projetos -->
-  <section class="projetos">
-    <h2>Projeto</h2>
-    <div class="cards">
-      <div class="project-card">
-        <img src="tabuada.jpg" alt="Tabuada">
-        <h3>Tabuada Divertida</h3>
-        <p>Aprendizado divertido e inclusivo.</p>
-        <a href="#" class="btn small">Saiba mais</a>
-      </div>
-      <div class="project-card">
-        <img src="tesouro.jpg" alt="Tesouro">
-        <h3>Caça ao Tesouro</h3>
-        <p>Exploração matemática colaborativa.</p>
-        <a href="#" class="btn small">Saiba mais</a>
-      </div>
-      <div class="project-card">
-        <img src="uno.jpg" alt="Uno">
-        <h3>Uno Matemático</h3>
-        <p>Jogo divertido para reforçar operações.</p>
-        <a href="#" class="btn small">Saiba mais</a>
+  <!-- ======= Projetos ======= -->
+  <section id="projetos" class="projects">
+    <div class="container">
+      <h2>Projeto</h2>
+      <p>Projetos de inclusão de TDAH e TEA promovem acessibilidade, adaptação de métodos de ensino e valorização da diversidade cognitiva.</p>
+      <div class="grid-cards">
+        <div class="project-card">
+          <img src="tabuada.jpg" alt="Tabuada Divertida">
+          <h3>Tabuada Divertida</h3>
+          <p>Aprender multiplicação de maneira lúdica e envolvente.</p>
+          <a href="#" class="btn btn-secondary">Saiba mais</a>
+        </div>
+        <div class="project-card">
+          <img src="tesouro.jpg" alt="Caça ao Tesouro">
+          <h3>Caça ao Tesouro</h3>
+          <p>Exploração matemática em atividades interativas e colaborativas.</p>
+          <a href="#" class="btn btn-secondary">Saiba mais</a>
+        </div>
+        <div class="project-card">
+          <img src="uno.jpg" alt="Uno Matemático">
+          <h3>Uno Matemático</h3>
+          <p>Jogo clássico adaptado para desafios matemáticos divertidos.</p>
+          <a href="#" class="btn btn-secondary">Saiba mais</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Estatísticas -->
+  <!-- ======= Estatísticas ======= -->
   <section class="stats">
-    <div>
-      <h3>20+</h3>
-      <p>Participantes</p>
-    </div>
-    <div>
-      <h3>8+</h3>
-      <p>Monitores</p>
-    </div>
-    <div>
-      <h3>99%</h3>
-      <p>Aprovação</p>
-    </div>
-    <div>
-      <h3>6+</h3>
-      <p>Projetos</p>
+    <div class="container stats-grid">
+      <div><h3>20+</h3><p>Participantes</p></div>
+      <div><h3>8+</h3><p>Monitores</p></div>
+      <div><h3>99%</h3><p>Aprovação</p></div>
+      <div><h3>6+</h3><p>Projetos</p></div>
     </div>
   </section>
 
-  <!-- Feedback -->
-  <section class="feedback">
-    <h2>Feedbacks</h2>
-    <div class="cards">
-      <div class="feedback-card">
-        <p>"Excelente projeto, ajudou muito meu filho!"</p>
-        <h4>- Maria Virgínia</h4>
-      </div>
-      <div class="feedback-card">
-        <p>"Métodos criativos e inclusivos."</p>
-        <h4>- Maria Virgínia</h4>
+  <!-- ======= Feedbacks ======= -->
+  <section class="feedbacks">
+    <div class="container">
+      <h2>Feedbacks</h2>
+      <div class="feedback-grid">
+        <div class="feedback">
+          <h4>Maria Virgínia</h4>
+          <p>“Os projetos foram incríveis e ajudaram muito na aprendizagem das crianças!”</p>
+        </div>
+        <div class="feedback">
+          <h4>Maria Virgínia</h4>
+          <p>“Atividades bem organizadas e super interativas.”</p>
+        </div>
+        <div class="feedback">
+          <h4>Maria Virgínia</h4>
+          <p>“Experiência transformadora para monitores e alunos.”</p>
+        </div>
+        <div class="feedback">
+          <h4>Maria Virgínia</h4>
+          <p>“Grande impacto na inclusão e acessibilidade na educação.”</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 ICMI. Todos os direitos reservados.</p>
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ICMI - Inclusão de Crianças à Matemática Interativa</p>
+    </div>
   </footer>
+
+
 </body>
 </html>

@@ -1,256 +1,327 @@
+/* ===== Reset básico ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-}
-html {
-  scroll-behavior: smooth;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-/* Navbar */
+/* ===== Container padrão ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== Navbar ===== */
 .navbar {
-  background: #002147;
-  color: white;
+  background: #003366;
+  color: #fff;
+  padding: 1rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  flex-wrap: wrap;
 }
+
+.navbar .logo {
+  height: 50px;
+}
+
 .navbar ul {
-  list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  list-style: none;
+  gap: 1.5rem;
 }
-.navbar li {
-  margin: 0 15px;
-}
+
 .navbar a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Hero */
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Hero ===== */
 .hero {
+  background: #fff;
+  padding: 4rem 0;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 50px 20px;
-  background: #f5f7fa;
   flex-wrap: wrap;
-  text-align: center;
+  align-items: center;
 }
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .hero-text {
-  max-width: 500px;
+  flex: 1;
+  min-width: 280px;
+  margin-right: 2rem;
 }
+
 .hero-text h1 {
   font-size: 3rem;
+  color: #003366;
 }
+
 .hero-text p {
-  margin: 10px 0;
+  margin: 1rem 0;
 }
-.buttons .btn {
-  padding: 10px 20px;
-  background: #0056b3;
-  color: white;
-  border-radius: 5px;
-  margin: 10px 5px 0 0;
+
+.hero-buttons .btn {
   display: inline-block;
-  text-decoration: none;
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
 }
-.btn.secondary {
-  background: #e0e0e0;
+
+.btn-primary {
+  background: #0066cc;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #e6e6e6;
   color: #333;
 }
 
-/* Seções gerais */
-section {
-  padding: 50px 20px;
+.btn-primary:hover {
+  background: #004999;
 }
 
-/* Cards Section */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.btn-secondary:hover {
+  background: #ccc;
 }
-.card, .project-card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 200px;
-}
-.card img, .project-card img {
+
+.hero-image img {
+  max-width: 300px;
   width: 100%;
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
 }
 
-/* Stats */
-.stats {
-  display: flex;
-  justify-content: space-around;
-  background: #002147;
-  color: white;
-  padding: 30px;
-  flex-wrap: wrap;
+/* ===== Participantes ===== */
+.participants {
+  padding: 3rem 0;
   text-align: center;
 }
-.stats div {
-  margin: 10px;
+
+.participants h2 {
+  color: #003366;
+  margin-bottom: 1rem;
 }
+
+.participants .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.participant-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.participant-card img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 120px;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== Projetos ===== */
+.projects {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.projects h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== Estatísticas ===== */
+.stats {
+  background: #003366;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
 .stats h3 {
   font-size: 2rem;
 }
 
-/* Feedback */
-.feedback {
-  text-align: center;
-}
-.feedback-card {
-  background: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 10px auto;
-  max-width: 300px;
-}
-
-/* Footer */
-.footer {
-  background: #002147;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-/* ===== Carrossel Participantes ===== */
-.carousel-container {
-  position: relative;
-  max-width: 1000px;
-  margin: 40px auto;
-  overflow: hidden;
-  padding: 0 40px;
-}
-.carousel-track {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-}
-.carousel-item {
-  flex: 0 0 auto;
-  width: 250px;
-  margin: 0 10px;
+/* ===== Feedbacks ===== */
+.feedbacks {
+  padding: 3rem 0;
   background: #fff;
-  border-radius: 8px;
   text-align: center;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.carousel-item img {
-  width: 100%;
-  border-radius: 8px;
-  max-width: 100%;
 }
 
-/* Botões */
-.carousel-container button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #002147;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 20px;
-  opacity: 0.8;
-  transition: opacity 0.3s;
-  z-index: 5;
+.feedbacks h2 {
+  color: #003366;
+  margin-bottom: 2rem;
 }
-.carousel-container button:hover {
-  opacity: 1;
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
-.prev { left: 0; }
-.next { right: 0; }
+
+.feedback {
+  background: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
 
 /* ===== Responsividade ===== */
-
-/* Tablets médios */
-@media (max-width: 992px) {
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-  .cards {
-    gap: 15px;
-  }
-  .card, .project-card {
-    width: 180px;
-  }
-  .carousel-item {
-    width: 200px;
-  }
-}
-
-/* Celulares grandes */
 @media (max-width: 768px) {
-  .navbar {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content {
     flex-direction: column;
     text-align: center;
   }
-  .hero {
-    flex-direction: column;
-    padding: 30px 15px;
-  }
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-  .stats {
-    flex-direction: column;
-  }
-  .carousel-container {
-    padding: 0 20px;
-  }
-  .carousel-container button {
-    top: 90%;
-    transform: translateY(0);
-  }
-  .carousel-item {
-    width: 180px;
+
+  .hero-text {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 }
 
-/* Celulares pequenos */
-@media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 1.8rem;
+
+/* ===== Carrossel de Participantes ===== */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px 0;
+  cursor: grab;
+}
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+.carousel::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.participant-card {
+  flex: 0 0 auto;
+  width: 200px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.participant-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.participant-card:hover {
+  transform: scale(1.05);
+}
+/* Centralizar logo da navbar em telas menores */
+.navbar .logo {
+  height: 50px;
+}
+
+/* Layout normal (desktop) mantém o estilo atual */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Esconde a logo acima do título em desktop */
+.hero-logo {
+  display: none;
+}
+
+/* ===== Mobile ajustes ===== */
+@media (max-width: 768px) {
+  /* Centralizar logo no topo (navbar) */
+  .navbar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .buttons .btn {
-    width: 100%;
-    margin: 10px 0;
+  .navbar nav ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
   }
-  .card, .project-card, .feedback-card {
-    width: 90%;
+
+  /* Centralizar conteúdo hero */
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
   }
-  .carousel-container {
-    padding: 0 10px;
-  }
-  .carousel-item {
-    width: 150px;
-    margin: 0 5px;
-    padding: 10px;
-  }
-  .carousel-container button {
-    font-size: 16px;
-    padding: 6px 10px;
-    top: 95%;
+
+  /* Mostrar logo acima do título e ajustar espaçamento */
+  .hero-logo {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 120px;
   }
 }
